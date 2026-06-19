@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+#include<ctime>
+
+int main() {
+	srand((unsigned int)time(NULL));
+
+	int a = rand() % 100 + 1;
+	/*cout<< a << endl;*/
+	int v = 0;
+	
+	while (1)
+	{
+		cin >> v;
+		if (v > a)
+		{
+			cout << "猜测过大" << endl;
+		}
+		else if (v < a)
+		{
+			cout << "猜测过小" << endl;
+		}
+		else
+		{
+			cout <<"猜对了" << endl;
+			break;
+		}
+	}
+
+
+system("pause");
+
+	return 0;
+
+}
